@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="app.js"></script>
+    <header>
+        <h1>Welcome to our Daily Dish Choice!</h1>
+        <p> <b>Daily Dish Choice</b> - Explore delicious meals from around the 
+            world. This is your ultimate destination for daily cooking inspiration! Say goodbye to the dilemma of <b>'What to cook today?'</b> 
+            Start exploring a wide range of delish dishes to feed your taste buds. We will help you out by providing random meal recommendations from our vast collection of delicious recipes.  </p>
+        <div class="searchBar">
+            <input type="text" id="search-CategoryInput" placeholder="Search for a meal category">
+            <button onclick="searchForMeal()">Search</button>
+        </div>
+    </header>
+
+    <div id="randomMeal-Display">
+        <h2>Random Meal</h2>
+        <div id="randomMeal-Container">
+            <!-- Random meal will be displayed -->
+        </div>
+    </div>
+
+    <div id="searchedMeals-Display">
+        <h2>List of Searched Meal Categories</h2>
+        <div id="searchedMeals-Category"></div>
+        <div id="searchedMeals-Container">
+            <!-- Searched meal categories will be displayed -->
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Ingredients</h3>
+            <ul id="ingredientsList">
+                <!-- Ingredients will be displayed -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+body {
+    background-color: #b9deda; 
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #53afc2;
+    padding: 40px;
+    text-align: center;
+}
+header p{
+    padding: 20px;
+    font-size: 20px;
+}
+header h1{
+    color: #c5de35;
+}
+.searchBar {
+    margin-top: 20px;
+}
+
+.searchBar input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.searchBar button {
+    padding: 10px 20px;
+    background-color: #c5de35;
+    color:black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#randomMeal-Display {
+    padding: 30px;
+    color:#0b4e5c;
+    font-size: 20px;
+    text-align: center;
+}
+
+#randomMeal-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#randomMeal-Container img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#searchedMeals-Display {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #d1e274;
+}
+
+#searchedMeals-Display h2,
+#searchedMeals-Category {
+    margin: 0 auto;
+    color: #596618;
+    width: 50%; 
+    padding: 10px;
+}
+#searchedMeals-Category{
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#searchedMeals-Container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+#searchedMeals-Container .meal {
+    text-align: center;
+}
+
+#searchedMeals-Container .meal img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+#searchedMeals-Container .meal p {
+    margin-top: 8px;
+    font-size: medium;
+    color:#596618;
+}
+
+
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #086770;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid rgb(248, 245, 245);
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-content h3{
+    color: #0b2f2c;
+    font-weight: bold ;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+#ingredientsList {
+    padding: 20px;
+    text-align: left;
+    height: 100px;
+    overflow-y: auto;
+}
+
+
+#ingredientsList li {
+    color: #b9deda;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.close {
+    color: rgb(255, 250, 250);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
